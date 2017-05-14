@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cc1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/fnid"
+        android:hint="FIRST NUMBER"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/subid"
+        android:layout_alignEnd="@+id/subid"
+        android:layout_alignLeft="@+id/rid"
+        android:layout_alignStart="@+id/rid" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="SECOND NUMBER"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/snid"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/fnid"
+        android:layout_alignLeft="@+id/fnid"
+        android:layout_alignStart="@+id/fnid"
+        android:layout_alignRight="@+id/subid"
+        android:layout_alignEnd="@+id/subid" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/rid"
+        android:gravity="center"
+        android:layout_below="@+id/snid"
+        android:layout_alignLeft="@+id/addid"
+        android:layout_alignStart="@+id/addid"
+        android:layout_marginTop="60dp"
+        android:hint="RESULT"
+        android:background="@drawable/rectborder"
+        android:layout_alignRight="@+id/subid"
+        android:layout_alignEnd="@+id/subid" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="ADD (+)"
+        android:id="@+id/addid"
+        android:layout_marginRight="63dp"
+        android:layout_marginEnd="63dp"
+        android:layout_below="@+id/rid"
+        android:layout_toLeftOf="@+id/subid"
+        android:layout_toStartOf="@+id/subid" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUB (-)"
+        android:layout_alignTop="@+id/addid"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="75dp"
+        android:layout_marginEnd="75dp"
+        android:id="@+id/subid" />
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_below="@+id/addid"
+        android:layout_alignLeft="@+id/addid"
+        android:layout_alignStart="@+id/addid"
+        android:layout_marginTop="52dp"
+        android:text="MUL (*)"
+        android:id="@+id/mulid" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mulid"
+        android:layout_alignLeft="@+id/subid"
+        android:layout_alignStart="@+id/subid"
+        android:text="DIV (/)"
+        android:id="@+id/divid" />
+
+</RelativeLayout>
